@@ -1,9 +1,9 @@
 <template name="station">
   <div class="station">
-    <div class="station-name">
+    <a class="station-name modal-trigger" href="#add-modal">
       <div class="white-circle"></div>
       {{name}}
-    </div>
+    </a>
     <div class="reports-container">
       {{#each reports name}}
         {{> report}}

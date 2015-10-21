@@ -26,10 +26,10 @@
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: spin-180 0.25s 1 ease-out;
   -webkit-animation-fill-mode: forwards;
-  -moz-animation: spin-180 0.25s 1 ease-out;
-  -moz-animation-fill-mode: forwards;
-  animation: spin-180 0.25s 1 ease-out;
-  animation-fill-mode: forwards;
+     -moz-animation: spin-180 0.25s 1 ease-out;
+     -moz-animation-fill-mode: forwards;
+          animation: spin-180 0.25s 1 ease-out;
+          animation-fill-mode: forwards;
 }
 
 .line-background {
@@ -174,19 +174,25 @@ img.top-panel-ninja {
 
 .station {
   margin-left: 7px;
-  margin-bottom: 10px;
 }
 
 .station-name {
   text-transform: uppercase;
+  display: block;
+  color: #222;
+  padding: 6px 0;
 }
+
+  .station-name:hover {
+    background: rgba(0, 0, 0, .25);
+  }
 
 .white-circle {
   width: 10px;
   height: 10px;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
   background-color: white;
   border: solid thin black;
   float: left;
